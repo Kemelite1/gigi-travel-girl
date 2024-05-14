@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+:root{
+    --green: #2ecc71;
+    --white: #fff;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+
+}
+
+*::selection{
+    background:var(--green);
+    color: var(--white);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+/* header/navbar styles */
+header{
+    background: #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 1rem 5%;
+}
+
+header .logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #d5d342;
+    text-transform: uppercase;
+}
+
+header .logo span{
+    color: var(--green);
+}
+
+header .navbar-menu a{
+    font-size: 2rem;
+    margin: 0 1rem;
+    color: var(--white);
+
+}
+
+header .navbar-menu a:hover{
+    color: var(--green);
+}
+
+header .icons{
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover{
+    color: var(--green);
+}
+
+header .search-bar-container{
+    background: rgb(83, 77, 77);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    padding: 1.5rem 2rem;
+    border-top: .1rem solid rgba(255,255,255,.1);
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container #search-bar{
+    color: #333;
+    font-size: 1.6rem;
+    width: 100%;
+    padding: 1rem;
+    border-radius: .5rem;
+    text-transform: none;
+}
+
+header .search-bar-container label{
+    font-size: 2rem;
+    color: var(--white);
+    margin-left: 1.5rem;
+    cursor: pointer;
+}
+
+header .search-bar-container label:hover{
+    color: var(--green);
+}
+
+
+
+/* end of header/navbar styles */
