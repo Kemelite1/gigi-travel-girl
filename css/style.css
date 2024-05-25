@@ -418,6 +418,40 @@ header .search-bar-container label:hover{
 /* end of packages styles */
 
 /* services styles */
+.services .services-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.services .services-container .service{
+    flex: 1 1 30rem;
+    text-align: center;
+    padding: 1rem;
+    /* box-shadow: 0 1rem 2rem rgba(0,0,0,.1); */
+    border-radius: .5rem;
+}
+
+.services .services-container .service i{
+    color: var(--green);
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+.services .services-container .service h3{
+    color: #777;
+    font-size: 2rem;
+}
+
+.services .services-container .service p{
+    color: #666;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.services .services-container .service:hover{
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
 
 /* end of services styles */
 
