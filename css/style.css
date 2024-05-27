@@ -452,8 +452,58 @@ header .search-bar-container label:hover{
 .services .services-container .service:hover{
     box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
 }
-
 /* end of services styles */
+
+/* gallery styles */
+.gallery .gallery-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.gallery .gallery-container .gallery-box{
+    flex: 1 1 30rem;
+    position: relative;
+    height: 25rem;
+    overflow: hidden;
+    border: 1rem solid var(--white);
+    border-radius: .5rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.gallery .gallery-container .gallery-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery .gallery-container .gallery-box .content{
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.gallery .gallery-container .gallery-box:hover .content{
+    top: 0;
+}
+
+.gallery .gallery-container .gallery-box .content h3{
+    color: var(--green);
+    font-size: 2.5rem;
+}
+
+.gallery .gallery-container .gallery-box .content p{
+    color: #eee;
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+/* end of gallery styles */
 
 /* media queries */
 @media (max-width: 1200px){
