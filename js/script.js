@@ -55,17 +55,17 @@ let swiper = new Swiper(".testimonial-slider", {
         el: '.swiper-pagination',
         clickable: true,
     },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    }
+    // breakpoints: {
+    //     640: {
+    //         slidesPerView: 1,
+    //     },
+    //     768: {
+    //         slidesPerView: 2,
+    //     },
+    //     1024: {
+    //         slidesPerView: 3,
+    //     },
+    // }
 });
 
 
