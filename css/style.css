@@ -592,6 +592,62 @@ header .search-bar-container label:hover{
     text-align: center;
 }
 
+/* footer styles */
+.footer{
+    background: #333;
+}
+
+.footer .footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.footer .footer-container .content{
+    flex: 1 1 25rem;
+    padding: 1rem 0;
+}
+
+.footer .footer-container .content h3{
+    color: var(--green);
+    font-size: 2rem;
+    padding: .7rem 0;
+}
+
+.footer .footer-container .content p{
+    color: #eee;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+}
+
+.footer .footer-container .content a{
+    display: block;
+    color: #eee;
+    font-size: 1.5rem;
+    padding: .7rem 0;
+}
+
+.footer .footer-container .content a:hover{
+    color: var(--green);
+    text-decoration: underline;
+}
+
+.footer .right{
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: normal;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 1rem;
+    border-top: 1rem solid rgba(255,255,255,.2);
+}
+
+.footer .right span{
+    color: var(--green);
+}
+
+/* end of footer styles */
+
 /* media queries */
 @media (max-width: 1200px){
     html{
