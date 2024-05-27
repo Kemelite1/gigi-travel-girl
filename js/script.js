@@ -44,6 +44,7 @@ videoButton.forEach(btn => {
 
 // swiperjs
 let swiper = new Swiper(".testimonial-slider", {
+    slidesPerView: 3,
     spaceBetween: 20,
     loop: true,
     autoplay: {
@@ -51,7 +52,8 @@ let swiper = new Swiper(".testimonial-slider", {
         disableOnInteraction: false,
     },
     pagination: {
-        el: '.swiper-pagination'
+        el: '.swiper-pagination',
+        clickable: true,
     },
     breakpoints: {
         640: {
