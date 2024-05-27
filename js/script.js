@@ -41,3 +41,37 @@ videoButton.forEach(btn => {
         document.querySelector('#video-slider').src = src;
     });
 });
+
+// swiperjs
+let swiper = new Swiper(".testimonial-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination'
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    }
+});
+
+
+
+
+
+
+
+
+
+
